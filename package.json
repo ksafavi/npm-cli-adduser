@@ -1,0 +1,23 @@
+{
+  "name": "npm-cli-adduser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksafavi/npm-cli-adduser.git"
+  },
+  "author": "Keikhosro Safavi",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ksafavi/npm-cli-adduser/issues"
+  },
+  "homepage": "https://github.com/ksafavi/npm-cli-adduser#readme",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "npm-registry-client": "^8.6.0"
+  }
+}
