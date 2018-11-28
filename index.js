@@ -43,10 +43,6 @@ if (!isNullOrWhiteSpace(program.scope)) {
     args.push('--scope=' + program.scope.trim());
 }
 
-if (!isNullOrWhiteSpace(program.alwaysAuth)) {
-    args.push('--always-auth');
-}
-
 if (!isNullOrWhiteSpace(program.authType)) {
     args.push('--auth-type=' + program.authType.trim());
 }
