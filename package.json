@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A script to perform `npm adduser` without having to interact with the shell",
   "bin": {
-    "npm-cli-adduser": "index.js"
+    "npm-cli-adduser": "./index.js"
   },
   "main": "index.js",
   "scripts": {
