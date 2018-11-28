@@ -1,7 +1,7 @@
 {
   "name": "npm-cli-adduser",
   "version": "1.0.0",
-  "description": "",
+  "description": "A script to perform `npm adduser` without having to interact with the shell",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/ksafavi/npm-cli-adduser#readme",
   "dependencies": {
-    "commander": "^2.19.0",
-    "npm-registry-client": "^8.6.0"
+    "commander": "^2.19.0"
   }
 }
