@@ -2,6 +2,9 @@
   "name": "npm-cli-adduser",
   "version": "1.0.0",
   "description": "A script to perform `npm adduser` without having to interact with the shell",
+  "bin": {
+    "npm-cli-adduser": "index.js"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +13,12 @@
     "type": "git",
     "url": "git+https://github.com/ksafavi/npm-cli-adduser.git"
   },
+  "keywords": [
+    "npm",
+    "login",
+    "adduser",
+    "cli"
+  ],
   "author": "Keikhosro Safavi",
   "license": "Apache-2.0",
   "bugs": {
