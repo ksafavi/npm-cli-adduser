@@ -13,6 +13,7 @@ A script to perform `npm adduser` without having to interact with the shell.
 `npm-cli-adduser` supports the following environment variables:
 
 - `NPM_REGISTRY`: (optional) Private NPM registry to log in to (Default: https://registry.npmjs.org)
+- `NPm_SCOPE`: NPM Scope
 - `NPM_USER`: NPM username
 - `NPM_PASS`: NPM password
 - `NPM_EMAIL`: NPM email

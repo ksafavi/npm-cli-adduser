@@ -39,8 +39,9 @@ if (!isNullOrWhiteSpace(registry)) {
     args.push('--registry=' + registry.trim());
 }
 
-if (!isNullOrWhiteSpace(program.scope)) {
-    args.push('--scope=' + program.scope.trim());
+const scope = isNullOrWhiteSpace(program.scope) ? process.env.NPM_SCOPE : program.scope;
+if (!isNullOrWhiteSpace(scope)) {
+    args.push('--scope=' + scope.trim());
 }
 
 if (!isNullOrWhiteSpace(program.authType)) {
