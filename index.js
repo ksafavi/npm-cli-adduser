@@ -71,20 +71,36 @@ const npm = spawn('npm', args, {
     shell: true
 });
 
+let count = 0;
 npm.stdout.on('data', (data) => {
     const str = data.toString();
     process.stdout.write(str);
     if (str.match(/username/i)) {
+        if (count > 0) {
+            npm.stdin.end();
+            return;
+        }
         process.stdout.write(`${username}\n`);
         npm.stdin.write(username + '\n');
     } else if (str.match(/password/i)) {
+        if (count > 1) {
+            npm.stdin.end();
+            return;
+        }
         process.stdout.write('\n');
         npm.stdin.write(password + '\n');
     } else if (str.match(/email/i)) {
+        if (count > 2) {
+            npm.stdin.end();
+            return;
+        }
         process.stdout.write(`${email}\n`);
         npm.stdin.write(email + '\n');
         npm.stdin.end();
+    } else if (str.match(/.*err.*/i)) {
+        npm.stdin.end();
     }
+    count++;
 });
 
 npm.on('exit', (code) => {
