@@ -102,4 +102,4 @@ npm.stdout.on('data', (data) => {
 
 npm.on('exit', (code) => {
     process.exit(code);
-})
+});
